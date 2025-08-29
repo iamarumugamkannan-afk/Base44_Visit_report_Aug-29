@@ -5,6 +5,11 @@
 +    "server:dev": "nodemon server/index.js",
 +    "server:start": "node server/index.js",
      "build": "vite build",
+    "setup:db": "node scripts/setup-db.js",
+    "docker:build": "docker build -t canna-app .",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
      "lint": "eslint .",
      "preview": "vite preview"
    },
